@@ -1,0 +1,25 @@
+name:                integer-literal-underscores
+version:             0.1.0.0
+synopsis:            Underscores in integer literals
+homepage:            https://github.com/zyla/integer-literal-underscores
+license:             BSD3
+author:              Maciej Bielecki
+maintainer:          zyla@prati.pl
+copyright:           Maciej Bielecki (c) 2017
+category:            Web
+extra-source-files:
+- README.md
+
+dependencies:
+  - base >= 4.7 && < 5
+
+library:
+  source-dirs: src
+
+tests:
+  hspec-tests:
+    source-dirs: test
+    main: Spec.hs
+    dependencies:
+      - integer-literal-underscores
+      - hspec
